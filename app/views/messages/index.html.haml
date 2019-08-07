@@ -1,0 +1,49 @@
+.chat-side
+  .side-header
+    .side-header_name
+      = current_user.name
+    .header_lists
+      = link_to new_group_path do 
+        = fa_icon 'edit', class: 'icon'
+      = link_to edit_user_path(current_user) do
+        = fa_icon 'cog', class: 'icon'
+
+  
+  .header-groups 
+    - current_user.groups.each do |group|
+      .group 
+        = link_to group_messages_path(group) do
+          .group__name
+            = group.name
+          .group__message
+            メッセージはまだありません。
+
+.chat-main
+
+  .main-header
+    texttext
+    .member-list
+      Member : ry0sk
+    .main-header_edit-btn
+      Edit
+
+  .messages
+    .upper-message
+      .upper-message__user-name
+        ry0sk
+        .upper-message__date
+          2017/04/04
+    .lower-meesage
+      .lower-message__content
+        メッセージ
+    
+  .form
+    .form-parent
+      .form-message
+        type a message
+
+      =link_to "https://www.facebook.com/", class: "content__btn--black" do
+        = fa_icon 'image'
+
+    .submit-btn
+      Send
