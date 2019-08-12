@@ -40,9 +40,18 @@ $('#new_message').on('submit', function(){
   })
   .fail(function(){
     alert('error');
+  })
+  //$.ajax().doneまたは$.ajax().failとなっている
+    })
+  //ここでsubmitにonした時の一連の流れは終わり
   });
-  return false;
-  });
+  //ここでjsファイルの記述終わり
+  
+ 
+ 
+ 
+ 
+  // return false;
 
 
 
