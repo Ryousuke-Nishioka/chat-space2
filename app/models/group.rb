@@ -5,9 +5,9 @@ class Group < ApplicationRecord
 
   validates :name, presence: true, uniqueness: true
 
-  def associate_users(user_ids:)
-    self.users << User.where(id: user_ids)
-  end
+  # def associate_users(user_ids:)
+  #   self.users << User.where(id: user_ids)
+  # end
 
   def show_last_message
     if (last_message = messages.last).present?
