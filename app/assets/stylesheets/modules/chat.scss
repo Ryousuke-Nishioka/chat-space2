@@ -10,15 +10,18 @@
     .main-header {
       float: left;
       &__title {
-        color: #333;
-        font-size: 20px;
-        margin-top: 35px;
+        color: black;
+        font-size: 25px;
+        margin-top: 35.5px;
+        padding-top: 30px;
       }
       &__members {
         color: lightgray;
         display: flex;
-        font-size: 2px;
-        margin-top: 15px;
+        font-size: 13px;
+        margin-top: 10px;
+        position: fixed;
+      }
         .member {
           display: inline-block;
           padding-right: 5px;
@@ -31,7 +34,7 @@
       float: right;
       height: 40px;
       line-height: 40px;
-      margin-top: -40px; 
+      margin-top: -35px; 
       padding: 0 20px;
       }
     }
@@ -85,6 +88,7 @@
       height: 50px;
       padding: 0 10px;
       width: calc(100% - 150px);
+
     }
     &__mask{
       background-color: white;
@@ -110,7 +114,7 @@
       padding: 0 30px;
     }
   }
-}
+
 
 
 .notification .notice {
