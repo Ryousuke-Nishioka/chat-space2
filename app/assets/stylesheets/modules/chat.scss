@@ -168,14 +168,18 @@
   .group {
     box-sizing: border-box;
     padding: 20px 0 40px;
-    &__name {
+    .group_name {
       font-size: 15px;
     }
-    &__message {
+    .group_message {
       font-size: 11px;
       margin-top: 5px;
     }
   }
+}
+
+a{
+  text-decoration:none;
 }
 
 
